@@ -1,12 +1,14 @@
 FROM n8nio/n8n:latest
 
-# Environment variables directly set karo
+# Required environment variables
 ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
-ENV N8N_BASIC_AUTH_PASSWORD=apna_strong_password_yahan_dalo
+ENV N8N_BASIC_AUTH_PASSWORD=apna_strong_password
 
-# Port expose karo
+# Optional but recommended
+ENV N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+ENV GENERIC_TIMEZONE=Asia/Kolkata
+
 EXPOSE 5678
 
-# n8n start karo
-CMD ["n8n", "start"]
+# N8n automatically start ho jayega
