@@ -7,7 +7,7 @@ ENV N8N_BASIC_AUTH_PASSWORD=apna_strong_password
 
 # Optional but recommended
 ENV N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=false
-NV GENERIC_TIMEZONE=Asia/Kolkata
+ENV GENERIC_TIMEZONE=Asia/Kolkata
 
 EXPOSE 5678
 
